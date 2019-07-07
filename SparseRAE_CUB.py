@@ -64,11 +64,6 @@ def SparseRAE_multi(X_train, X_test, GY_train, GY_test, target_path, label_ind, 
 
 
     print(X_train.shape)
-    #print(X_train)
-    #NZ_X = X_train[0:100,:]
-    #NZ_index = NZ_X.nonzero()
-    #NZ_X2 = NZ_X[NZ_index]
-    #print(NZ_X2.shape)
     print(GY_train.shape)
 
     ##################################################################################################################
