@@ -27,7 +27,7 @@ def Generate_training_onevsall_ExamplesForSemanticConcepts(Cname, label_ind, Dat
     label_ind, pos_index_concept_labels, neg_index_concept_labels, pos_fileName, neg_fileName = util.Generate_onevsall_ExamplesForSemanticConcepts(Cname, label_ind)
 
     test_pos_num = 10 * len(label_ind) # == 10 ?
-    label_ind = np.array(label_ind) 
+    label_ind = np.array(label_ind)
     data_all = scio.loadmat(DataFile) # load training data - note that X_train are I-features (4096) and Y_train are logits (201) - was expecting class labels
 
     x = list(enumerate(positive_index))
@@ -39,7 +39,6 @@ def Generate_training_onevsall_ExamplesForSemanticConcepts(Cname, label_ind, Dat
     pos_fileName_shuffled = [pos_fileName[i] for i in indices]
 
     # resort the labels
-    # random.shuffle(negative_index)
     x = list(enumerate(negative_index))
     random.shuffle(x)
     indices, negative_index = zip(*x)
@@ -91,15 +90,8 @@ def Generate_training_onevsall_ExamplesForSemanticConcepts(Cname, label_ind, Dat
     #Y_pre = np.transpose([Y_pre])
     Y_test = Y_data[test_index, :]
     Y_test = Y_test[:, label_ind]
-    #Y_pretest = np.transpose([Y_pretest])
-    # print('X_train:', X_train)
-    # print('Y_train:', Y_train)
-    # print('Yconcept_train:', Yconcept_train_index)
-    # print('X_test:', X_test)
-    # print('Y_test:', Y_test)
-    # print('Yconcept_test:', Yconcept_test_index)
 
-    # print()
+    
     Yconcept_train_index=torch.FloatTensor(Yconcept_train_index) # torch tensor (not one hot)
     Yconcept_test_index=torch.FloatTensor(Yconcept_test_index)
 
