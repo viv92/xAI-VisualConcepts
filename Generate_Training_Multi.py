@@ -27,9 +27,7 @@ def Generate_training_onevsall_ExamplesForSemanticConcepts(Cname, label_ind, Dat
     label_ind, pos_index_concept_labels, neg_index_concept_labels, pos_fileName, neg_fileName = util.Generate_onevsall_ExamplesForSemanticConcepts(Cname, label_ind)
 
     test_pos_num = 10 * len(label_ind) # == 10 ?
-    print("????????? test_pos_num: {}".format(test_pos_num))
-    label_ind = np.array(label_ind) # why turn a number into array ?
-    print("????????? label_ind: {}".format(label_ind))
+    label_ind = np.array(label_ind) 
     data_all = scio.loadmat(DataFile) # load training data - note that X_train are I-features (4096) and Y_train are logits (201) - was expecting class labels
 
     x = list(enumerate(positive_index))
