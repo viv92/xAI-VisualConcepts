@@ -107,10 +107,6 @@ def Generate_onevsall_index(Cname, label_ind):                                  
     #neg_len=0
 
 
-    #if rowi['Subfile']==None:
-    #    continue
-
-
     with open('Data/thefilename.txt','r') as f1:
         linenum = 0
         pos_index = []
