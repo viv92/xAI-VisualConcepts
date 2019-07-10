@@ -91,16 +91,13 @@ def Generate_training_onevsall_ExamplesForSemanticConcepts(Cname, label_ind, Dat
     Y_test = Y_data[test_index, :]
     Y_test = Y_test[:, label_ind]
 
-    
+
     Yconcept_train_index=torch.FloatTensor(Yconcept_train_index) # torch tensor (not one hot)
     Yconcept_test_index=torch.FloatTensor(Yconcept_test_index)
 
     return(X_train, X_test, Y_train, Y_test, label_ind, test_index_pos, test_index, train_index, Yconcept_train_index, Yconcept_test_index, category_train,category_test,xnn_train, xnn_test, fileName_train,fileName_test)
 
-def Generate_onevsall_index(Cname, label_ind):
-
-    #CategoryListFile = '/media/phoenixqq/新加卷/Ubuntu_home/Caffe/ExcitationBP/ZhongangFinal_MainCUB/Data/CUB200_csvnamelist.csv'
-    #CategoryListFile = 'Data/CUB200_Multi_csvnamelist.csv'                                                                    # 1 of 3
+def Generate_onevsall_index(Cname, label_ind):                                                                   # 1 of 3
 
 
     all_pos_index = []
