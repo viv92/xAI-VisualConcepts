@@ -122,7 +122,6 @@ def Generate_onevsall_index(Cname, label_ind):                                  
             linenum = linenum + 1
 
 
-    #print('linevec:', linevec)
     #p_start = min(linevec)-1  # line-1
     #p_end = max(linevec)  # line
 
