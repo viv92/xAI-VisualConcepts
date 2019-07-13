@@ -84,7 +84,6 @@ def Generate_training_onevsall_ExamplesForSemanticConcepts(Cname, label_ind, Dat
     Y_data = data_all['Y_Train'] # 11788 x 201 (logits, not labels)
     Y_train = Y_data[train_index, :]  # for categories
     Y_train = Y_train[:, label_ind]  # picking logits only for the concerned class - Y just reduced from 201 columns to 1 column
-    print("?????????? Y_train.shape: {}".format(Y_train.shape))
     #Y_pre = np.transpose([Y_pre])
     Y_test = Y_data[test_index, :]
     Y_test = Y_test[:, label_ind]
