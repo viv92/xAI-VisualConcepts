@@ -78,7 +78,6 @@ def Generate_training_onevsall_ExamplesForSemanticConcepts(Cname, label_ind, Dat
     print('label_ind:', label_ind)
 
     X_data = data_all['X_Train'] # 11788 x 4096
-    print("?????????? X_data.shape: {}".format(X_data.shape))
     X_train = X_data[train_index, :]
     X_test = X_data[test_index, :]
 
