@@ -118,9 +118,6 @@ def Generate_onevsall_index(Cname, label_ind):                                  
 
             linenum = linenum + 1
 
-    #print('p_end:', p_end)
-    #print('label_ind:',label_ind)
-
 
     pos_len +=len(pos_index)
     #neg_len +=len(neg_index)
