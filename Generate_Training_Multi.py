@@ -155,18 +155,8 @@ def Generate_training_onevsall_retrained(Cname, label_ind, DataFile):
     label_ind = np.array(label_ind)
 
     data_all = scio.loadmat(DataFile)
-    #data_all2 = scio.loadmat(dataFile2)
 
-    #positive_index = np.array(range(p_start, p_end))  # for categories
-    #if p_start > 0 and p_end < 11788:
-    #    negative_index = np.array(range(p_start))
-    #    negative_index = np.append(negative_index, range(p_end, 11788))
-    #elif p_start == 0:
-    #    negative_index = np.array(range(p_end, 11788))
-    #elif p_end == 11788:
-    #    negative_index = np.array(range(p_start))
-    # random.shuffle(positive_index)
-    # positive_index1=positive_index
+
     x = list(enumerate(positive_index))
     random.shuffle(x)
     indices, positive_index = zip(*x)
