@@ -196,9 +196,7 @@ def Generate_training_onevsall_retrained(Cname, label_ind, DataFile):
     #Y_pre = np.transpose([Y_pre])
     Y_test = Y_data[test_index, :]
     Y_test = Y_test[:, label_ind]
-    #Y_pretest = np.transpose([Y_pretest])
-    # print('X_train:', X_train)
-    # print('Y_train:', Y_train)
+
     # print('Yconcept_train:', Yconcept_train_index)
     # print('X_test:', X_test)
     # print('Y_test:', Y_test)
