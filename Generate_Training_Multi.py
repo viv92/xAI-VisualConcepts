@@ -197,12 +197,6 @@ def Generate_training_onevsall_retrained(Cname, label_ind, DataFile):
     Y_test = Y_data[test_index, :]
     Y_test = Y_test[:, label_ind]
 
-    # print('Yconcept_train:', Yconcept_train_index)
-    # print('X_test:', X_test)
-    # print('Y_test:', Y_test)
-    # print('Yconcept_test:', Yconcept_test_index)
-
-    # print()
     Yconcept_train_index=torch.FloatTensor(Yconcept_train_index)
     Yconcept_test_index=torch.FloatTensor(Yconcept_test_index)
 
