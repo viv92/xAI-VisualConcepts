@@ -208,10 +208,6 @@ def Generate_training_onevsall(Cname, label_ind, DataFile):
     test_pos_num = 10*len(label_ind)
     label_ind = np.array(label_ind)
 
-    # p_start = 3546 #line-1  (1)
-    # p_end = 3606  #line      (2)
-    # label_ind = 62    # for 062 (3)
-
     data_all = scio.loadmat(DataFile)
     #data_all2 = scio.loadmat(dataFile2)
 
