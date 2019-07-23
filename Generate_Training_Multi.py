@@ -210,14 +210,7 @@ def Generate_training_onevsall(Cname, label_ind, DataFile):
 
     data_all = scio.loadmat(DataFile)
 
-    #positive_index = np.array(range(p_start, p_end))  # for categories
-    #if p_start > 0 and p_end < 11788:
-    #    negative_index = np.array(range(p_start))
-    #    negative_index = np.append(negative_index, range(p_end, 11788))
-    #elif p_start == 0:
-    #    negative_index = np.array(range(p_end, 11788))
-    #elif p_end == 11788:
-    #    negative_index = np.array(range(p_start))
+
     random.shuffle(positive_index)
     random.shuffle(negative_index)
 
