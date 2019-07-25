@@ -251,9 +251,7 @@ def Generate_training(CategoryListFile, DataFile):
     positive_index, negative_index, label_ind = util.Generate_multi_index(CategoryListFile)
     test_pos_num = 10*len(label_ind)
     label_ind = np.array(label_ind)
-    # dataFile = '/home/phoenixqq/My_program/My_autoencoder/autoencoder_orthogonal/TrainData_CUBALL.mat'
-    # dataFile2 = '/home/phoenixqq/My_program/My_autoencoder/autoencoder_orthogonal/PCAALL.mat'
-    # dataFile2 = '/home/phoenixqq/My_program/My_autoencoder/autoencoder_orthogonal/PCAALLwithoutPCA.mat'
+
     # p_start = 3546 #line-1  (1)
     # p_end = 3606  #line      (2)
     # label_ind = 62    # for 062 (3)
