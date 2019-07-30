@@ -253,7 +253,6 @@ def Generate_training(CategoryListFile, DataFile):
     label_ind = np.array(label_ind)
 
     data_all = scio.loadmat(DataFile)
-    #data_all2 = scio.loadmat(dataFile2)
 
     #positive_index = np.array(range(p_start, p_end))  # for categories
     #if p_start > 0 and p_end < 11788:
