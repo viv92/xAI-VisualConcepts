@@ -638,12 +638,6 @@ def SRAE_Optim_retrained(conceptLoss_1allData_0nonMissingData, TrainX, TrainY, T
             TrainY_multi[index_multi] = allLables[0] # y logit and the (3x1) concept vector
             index_multi= index_multi+1
 
-    #confirm - debugging
-    # print(">>>>>>>>>>>>>>>>>>> confirm")
-    # print("sum(TrainY_non_multi): {}".format(sum(TrainY_non_multi)))
-    # c0 = 0
-    # c1 = 0
-    # c2 = 0
     # for i in range(TrainY_multi.size(0)):
     #     s = sum(TrainY_multi[i][1:])
     #     if s == 0:
