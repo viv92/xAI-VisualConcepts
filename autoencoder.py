@@ -643,9 +643,6 @@ def SRAE_Optim_retrained(conceptLoss_1allData_0nonMissingData, TrainX, TrainY, T
     trainData = Data.TensorDataset(TrainX_non_multi, TrainY_non_multi) # all negative exmples - why?
     train_loader = Data.DataLoader(trainData,batch_size=batch_size , shuffle=True)
 
-    # print(">>>>>>>>>>>>>>>> TrainX_non_multi.shape: {}".format(TrainX_non_multi.shape))
-    # print(">>>>>>>>>>>>>>>> TrainY_multi.shape: {}".format(TrainY_multi.shape))
-
 
 
 
