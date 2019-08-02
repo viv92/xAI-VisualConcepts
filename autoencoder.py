@@ -645,7 +645,7 @@ def SRAE_Optim_retrained(conceptLoss_1allData_0nonMissingData, TrainX, TrainY, T
 
     # print(">>>>>>>>>>>>>>>> TrainX_non_multi.shape: {}".format(TrainX_non_multi.shape))
     # print(">>>>>>>>>>>>>>>> TrainY_multi.shape: {}".format(TrainY_multi.shape))
-    # print(">>>>>>>>>>>>>>>> batch_size: {}".format(batch_size))
+
 
 
 
