@@ -638,16 +638,6 @@ def SRAE_Optim_retrained(conceptLoss_1allData_0nonMissingData, TrainX, TrainY, T
             TrainY_multi[index_multi] = allLables[0] # y logit and the (3x1) concept vector
             index_multi= index_multi+1
 
-    # for i in range(TrainY_multi.size(0)):
-    #     s = sum(TrainY_multi[i][1:])
-    #     if s == 0:
-    #         c0 += 1
-    #     if s == 1:
-    #         c1 += 1
-    #     if s > 1:
-    #         c2 += 1
-    # print("c0={}, c1={}, c2={}".format(c0,c1,c2))
-
 
     batch_size = ( round((TrainX.size(0)-number_multi)/(number_multi *numberOf_NonMissingData) )  +numberOf_NonMissingData) # 41 + 5
     trainData = Data.TensorDataset(TrainX_non_multi, TrainY_non_multi) # all negative exmples - why?
