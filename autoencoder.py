@@ -778,7 +778,6 @@ def SRAE_Optim_retrained(conceptLoss_1allData_0nonMissingData, TrainX, TrainY, T
 
                 mulit_label_losss = bce_loss_elements_pos_class#nn.BCEWithLogitsLoss(weight = class_Weights)
                 concept_loss = mulit_label_losss
-                # concept_loss1 = mulit_label_losss1(b_x_encoder, multi_label)
 
             else:
                 for indexData in range(multi_label.size(0)):
