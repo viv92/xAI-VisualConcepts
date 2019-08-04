@@ -785,11 +785,7 @@ def SRAE_Optim_retrained(conceptLoss_1allData_0nonMissingData, TrainX, TrainY, T
                         mulit_label_losss = nn.BCEWithLogitsLoss()
                         concept_loss = concept_loss + mulit_label_losss( b_x_encoder[indexData][0:multi_label.size(1)], b_multi_label[indexData])
 
-            # print("++++++++++++++++++++++++")
-            # print("alpha_pred * predict_loss = {}".format(alpha_pred * predict_loss))
-            # print("alpha_recons * recons_loss = {}".format(alpha_recons * recons_loss))
-            # print("alpha_pt_loss * pt_loss = {}".format(alpha_pt_loss * pt_loss))
-            # print("alpha_concepts_loss * concept_loss1 = {}".format(alpha_concepts_loss * concept_loss))
+
             loss = alpha_pred * predict_loss + alpha_recons * recons_loss + alpha_pt_loss * pt_loss +  alpha_concepts_loss * concept_loss
 
             #backward
