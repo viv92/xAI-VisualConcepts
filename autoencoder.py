@@ -838,7 +838,6 @@ def SRAE_Optim_retrained(conceptLoss_1allData_0nonMissingData, TrainX, TrainY, T
                       '|train recons loss:%.4f' % recons_loss.data,
                       '|train PT loss:%.4f' % pt_loss.data,
                       '|train concept loss:%.4f' % concept_loss,
-                      # '|train concept loss1:%.4f' % concept_loss1,
                       '|test pred loss:%.4f' % test_predict_loss.data, '|test recons loss:%.4f' % test_recons_loss.data,
                       '|test PT loss:%.4f' % test_pt_loss.data
                       # '|test concept loss:%.4f' % concept_loss_test.data
