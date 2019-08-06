@@ -826,12 +826,6 @@ def SRAE_Optim_retrained(conceptLoss_1allData_0nonMissingData, TrainX, TrainY, T
 
                     test_pt_loss = test_pt_loss+test_pt_loss_i
 
-                # concept_loss_test = 0
-                # for indexData in range(y_concept_test.size(0)):
-                #     if ( (y_concept_test[indexData,:]==0).all()) :
-                #        a=1# print("All zero")
-                #     else:#
-                #         concept_loss_test = concept_loss_test +  mulit_label_losss(test_x_encoder[indexData][0:y_concept_test.size(1)], y_concept_test[indexData])
 
                 print(('Epoch:', epoch, '|Step:', step,
                       '|train loss:%.4f' % loss.data, '|train pred loss:%.4f' % predict_loss.data,
