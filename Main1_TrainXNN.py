@@ -32,7 +32,6 @@ def generate_model(out_path_base):
         label_ind = int(label_ind)
 
         allowed_classes = np.array([2,5])
-        #allowed_classes = np.array([10])
         label_ind_list = np.ones(allowed_classes.shape[0]) * label_ind
         if not np.any(allowed_classes == label_ind_list):
             continue
