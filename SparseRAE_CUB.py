@@ -374,7 +374,6 @@ def SparseRAE_multi_retrainedModel_AllDatalossfunction(useXNNOrNOT,X_train, X_te
 
 
     print(X_train.shape)
-    #print(X_train)
     #NZ_X = X_train[0:100,:]
     #NZ_index = NZ_X.nonzero()
     #NZ_X2 = NZ_X[NZ_index]
